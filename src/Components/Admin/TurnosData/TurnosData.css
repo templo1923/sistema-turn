@@ -1,0 +1,98 @@
+.modal-admin {
+    top: 0;
+    background-color: var(--blanco);
+    width: 100vh;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 10px ;
+    border: none;
+    padding: 20px;
+}
+
+.overlay-admin {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.333); 
+    z-index: 999; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.modal-admin select{
+    width: 100%;
+    background-color: var(--blanco);
+    border: none;
+    color: var(--text-color2);
+}
+.btnSelected{
+    background-color: var(--color1);
+    color: var(--blanco);
+    padding: 7px 10px;
+    border: none;
+    font-size: 0.8em;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.btnNoSelected{
+    background-color: var(--gris2);
+    padding: 7px 10px;
+    border: none;
+    font-size: 0.8em;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.grapBtns button span{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 20ch!important;
+}
+.grapBtns{
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+.grapBtns::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+    cursor: pointer;
+    background-color: transparent;
+   
+}
+.grapBtns::-webkit-scrollbar-thumb {
+    background-color: var(--color1); 
+    border-radius: 10px;
+    margin-top: 3rem;
+    cursor: pointer;
+  }
+@media (max-width: 1000px){
+    .overlay-admin {
+        justify-content: end;
+        align-items: end;
+        padding: 0;
+    }
+    .modal-admin {
+        top: 0;
+        background-color: var(--blanco);
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        border-radius: 10px ;
+        border: none;
+        padding: 10px;
+    }
+}

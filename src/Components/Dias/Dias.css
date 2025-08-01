@@ -1,0 +1,237 @@
+
+.Dias{
+
+    padding: 0vh 0;
+} 
+
+.Dias hr{
+    margin-bottom: 3rem;
+    margin: 20px;
+}
+#cardDayLoading{
+    width: 8rem;
+    height: 7rem;
+    border-radius: 15px;
+    margin: 0rem 0 2rem 1rem;
+    background: linear-gradient(90deg, #e8e6e6, #fff, #fff);
+    background-size: 400% 400%;
+    animation: gradientMove 1s linear infinite;
+}
+#cardDay{
+    background-color: var(--blanco);
+    width: 8rem;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.027);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    padding: 6px;
+    margin: 0rem 0 2rem 1rem;
+    border: 1px solid var(--border);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+#cardDay h4{
+    color: var(--text-color2);
+    font-weight: 500;
+}
+#cardDay h5{
+    color: var(--text-color2);
+    font-weight: 500;
+}
+#cardDay p{
+    color: var(--text-color2);
+}
+#cardDay:hover{
+    background-color: var(--color1);
+}
+#cardDay:hover h4{
+    color: var(--blanco);
+}
+#cardDay:hover h5{
+    color: var(--blanco);
+}
+#cardDay:hover p{
+    color: var(--blanco);
+}
+
+
+
+#selectedDay {
+    background-color: var(--color1);
+    width: 8rem;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.027);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    padding: 6px;
+    margin: 0rem 0 2rem 1rem;
+    border: 1px solid var(--border);
+   
+}
+#selectedDay h4{
+    color: var(--blanco);
+    font-weight: 500;
+}
+#selectedDay h5{
+    color: var(--blanco);
+    font-weight: 500;
+}
+#selectedDay p{
+    color: var(--blanco);
+}
+.flexGrapHoras{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+    
+}
+.flexGrapHoras button{
+    width: 30%;
+    background-color: var(--blanco);
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.027);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid var(--border);
+    color: var(--text-color2);
+}
+.flexGrapHoras button:hover {
+    background-color: var(--color1);
+    color: var(--blanco);
+}
+.horariosSeleccionados{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    width: 100%;
+    padding: 5vh 20px;
+}
+
+.horariosSeleccionados h4{
+    justify-content: center;
+    align-items:center ;
+    color: var(--color1);
+    font-weight: 500;
+    font-size: 1em;
+    border-bottom: 1px solid var(--loading);
+    padding-bottom: 10px;
+
+}
+
+.textCenter{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    text-align: center;
+    color: var(--text-color2);
+    font-weight: 500;
+    font-size: 1em;
+    height: 30vh;
+}
+.btnFlotant{
+    background-color: var(--color1);
+        padding: 15px;
+        color: var(--blanco);
+        border: none;
+        border-radius: 10rem;
+    position: fixed;
+    bottom: 40px;
+    right: 0;
+    left: 70%;
+    z-index: 2;
+    width: 17rem;
+    cursor: pointer;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.196);
+}
+
+.red{
+    background-color: red;
+    padding: 5px;
+    border-radius: 100%;
+    margin-top: 5px;
+}
+.green{
+    background-color: rgb(30, 184, 30);
+    padding: 5px;
+    border-radius: 100%;
+    margin-top: 5px;
+}
+@media (max-width: 1000px) {
+    .flexGrapHoras button{
+        width: 45%;
+        
+    }
+    .flexGrapHoras{
+        gap: 10px;
+        
+    }
+    #selectedDay {
+        background-color: var(--color1); 
+        width: 6rem;
+        padding: 6px;
+        margin: 10px 0 20px 10px;
+        border: 1px solid var(--gris2);
+    }
+    #cardDay{
+        width: 6rem;
+        margin: 10px 0 20px 10px;
+    }
+    #cardDayLoading{
+        width: 6rem;
+        height: 6rem;
+        margin: 10px 0 20px 10px;
+    }
+    .Dias{
+        border-radius: 20px 20px 0 0;
+        background-color: var(--blanco);
+        z-index: 1;
+        
+}
+    .Dias h4{
+        font-size: 0.8em;
+    }
+    .Dias h5{
+        font-size: 0.7em;
+    }
+    .Dias p{
+        font-size: 0.6em;
+    }
+    .btnFlotant{
+        background-color: var(--color1);
+        padding: 15px;
+        color: var(--blanco);
+        border: none;
+        border-radius: 10rem;
+        position: fixed;
+        bottom: 10px;
+        right: 0;
+        left:  0;
+        width: auto;
+        margin: 0 1REM;
+        z-index: 2;
+        cursor: pointer;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.196);
+      
+}
+.horariosSeleccionados{
+    
+    padding: 0vh 20px 1vh;
+}
+.Dias hr{
+    margin-bottom: 0;
+    margin: 0px 20px 10px;
+}
+#cardsServicio{
+    padding-left: 10px;
+}
+}
